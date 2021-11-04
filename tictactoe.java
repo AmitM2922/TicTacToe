@@ -1,5 +1,7 @@
-import java.util.*;
+                                                               // Developed By Amit Mulmule
 
+import java.util.*;
+import java.util.Scanner;
 public class tictactoe {
     static ArrayList<Integer> playerposition=new ArrayList<>();
     static ArrayList<Integer> cpuposition=new ArrayList<>();
@@ -9,6 +11,7 @@ public class tictactoe {
         System.out.println("Enter your name : ");
         String name=sc.nextLine().toUpperCase();
         System.out.println(" *** Hello! "+name.toUpperCase()+" your game is started ***\n");
+        
      // creating game board
 
      char game_board[][]={{' ','|',' ','|',' '},
@@ -23,6 +26,7 @@ public class tictactoe {
     while(true)
     {
         // taking  position from user
+        
         System.out.println("Enter your placement (1-9)\n");
         int position=sc.nextInt();
         while (playerposition.contains(position) ||cpuposition.contains(position))
@@ -147,3 +151,4 @@ public class tictactoe {
         return "";
     }
 }
+               
